@@ -1,0 +1,429 @@
+p_name = ''
+p_hit_points = 0
+p_min_attack = 0
+p_max_attack = 0
+p_attack = 0
+
+b_name_1 = ''
+b_hit_points_1 = 0
+b_min_attack_1 = 0
+b_max_attack_1 = 0
+b_attack_1 = 0
+
+b_name_2 = ''
+b_hit_points_2 = 0
+b_min_attack_2 = 0
+b_max_attack_2 = 0
+b_attack_2 = 0
+
+b_name_3 = ''
+b_hit_points_3 = 0
+b_min_attack_3 = 0
+b_max_attack_3 = 0
+b_attack_3 = 0
+
+b_hit_points_total = 0
+
+page = 0
+
+
+print("Welcome to bear attack.")
+
+
+def create_player():
+    global p_hit_points
+    global p_name
+    global p_min_attack
+    global p_max_attack
+    p_name = input("What's your name?")
+    print(f"Hello {p_name}")
+    if p_name == 'Russian':
+        print("Победа за Вами!!!")
+    while True:
+        try:
+            p_hit_points = int(input("please enter the player's hitpoints"))
+            if p_hit_points > 0:
+                print("Thank you, value recorded.")
+
+            else:
+                print("Hitpoints must be greater than 0.")
+                continue
+            break
+        except ValueError:
+            print("That is not a valid number.")
+            continue
+
+    while True:
+        try:
+            p_min_attack = int(input("Please enter your minimum attack damage."))
+            if p_min_attack > 0:
+                print("Thank you, value recorded.")
+            else:
+                print("minimum attack must be greater than 0.")
+                continue
+            break
+        except ValueError:
+            print("That is not a valid number.")
+            continue
+
+    while True:
+        try:
+            p_max_attack = int(input("Please enter your maximum attack damage."))
+            if p_max_attack > p_min_attack:
+                print("Thank you, value recorded.")
+            else:
+                print("Maximum attack must be greater than minimum attack.")
+                continue
+            break
+        except ValueError:
+            print("That is not a valid number.")
+            continue
+
+
+def create_bear_1():
+    global b_hit_points_1
+    global b_name_1
+    global b_min_attack_1
+    global b_max_attack_1
+
+    b_name_1 = input("What would you like the name of the first bear to be?")
+    print(f"{b_name_1} is approaching.")
+    while True:
+        try:
+            b_hit_points_1 = int(input("please enter the bear's hitpoints"))
+            if b_hit_points_1 > 0:
+                print("Thank you, value recorded.")
+            else:
+                print("Hitpoints must be greater than 0")
+                continue
+            break
+        except ValueError:
+            print("That is not a valid number.")
+            continue
+
+    while True:
+        try:
+            b_min_attack_1 = int(input("Please enter the bear's minimum attack damage."))
+            if b_min_attack_1 > 0:
+                print("Thank you, value recorded.")
+            else:
+                print("minimum attack must be greater than 0.")
+                continue
+            break
+        except ValueError:
+            print("That is not a valid number.")
+            continue
+
+    while True:
+        try:
+            b_max_attack_1 = int(input("Please enter the bear's maximum attack damage."))
+            if b_max_attack_1 > b_min_attack_1:
+                print("Thank you, value recorded.")
+            else:
+                print("Maximum attack must be greater than minimum attack.")
+                continue
+            break
+        except ValueError:
+            print("That is not a valid number.")
+            continue
+
+
+def create_bear_2():
+    global b_hit_points_2
+    global b_name_2
+    global b_min_attack_2
+    global b_max_attack_2
+
+    b_name_2 = input("What would you like the name of the second bear to be?")
+    print(f"{b_name_1} is approaching.")
+    while True:
+        try:
+            b_hit_points_2 = int(input("please enter the bear's hitpoints"))
+            if b_hit_points_2 > 0:
+                print("Thank you, value recorded.")
+            else:
+                print("Hitpoints must be greater than 0")
+                continue
+            break
+        except ValueError:
+            print("That is not a valid number.")
+            continue
+
+    while True:
+        try:
+            b_min_attack_2 = int(input("Please enter the bear's minimum attack damage."))
+            if b_min_attack_2 > 0:
+                print("Thank you, value recorded.")
+            else:
+                print("minimum attack must be greater than 0.")
+                continue
+            break
+        except ValueError:
+            print("That is not a valid number.")
+            continue
+
+    while True:
+        try:
+            b_max_attack_2 = int(input("Please enter the bear's maximum attack damage."))
+            if b_max_attack_2 > b_min_attack_2:
+                print("Thank you, value recorded.")
+            else:
+                print("Maximum attack must be greater than minimum attack.")
+                continue
+            break
+        except ValueError:
+            print("That is not a valid number.")
+            continue
+
+
+def create_bear_3():
+    global b_hit_points_3
+    global b_name_3
+    global b_min_attack_3
+    global b_max_attack_3
+
+    b_name_3 = input("What would you like the name of the third bear to be?")
+    print(f"{b_name_3} is approaching.")
+    while True:
+        try:
+            b_hit_points_3 = int(input("please enter the bear's hitpoints"))
+            if b_hit_points_3 > 0:
+                print("Thank you, value recorded.")
+            else:
+                print("Hitpoints must be greater than 0")
+                continue
+            break
+        except ValueError:
+            print("That is not a valid number.")
+            continue
+
+    while True:
+        try:
+            b_min_attack_3 = int(input("Please enter the bear's minimum attack damage."))
+            if b_min_attack_3 > 0:
+                print("Thank you, value recorded.")
+            else:
+                print("minimum attack must be greater than 0.")
+                continue
+            break
+        except ValueError:
+            print("That is not a valid number.")
+            continue
+
+    while True:
+        try:
+            b_max_attack_3 = int(input("Please enter the bear's maximum attack damage."))
+            if b_max_attack_3 > b_min_attack_3:
+                print("Thank you, value recorded.")
+            else:
+                print("Maximum attack must be greater than minimum attack.")
+                continue
+            break
+        except ValueError:
+            print("That is not a valid number.")
+            continue
+
+
+def create_encounter():
+    global page
+
+    global b_hit_points_1
+    global b_min_attack_1
+    global b_max_attack_1
+    global b_attack_1
+
+    global b_hit_points_2
+    global b_min_attack_2
+    global b_max_attack_2
+    global b_attack_2
+
+    global b_hit_points_3
+    global b_min_attack_3
+    global b_max_attack_3
+    global b_attack_3
+
+    global p_hit_points
+    global p_min_attack
+    global p_max_attack
+    global p_attack
+    global b_hit_points_total
+    import random
+
+
+    print(f"{b_hit_points_total}")
+    print(f"Welcome to the battle {p_name}.")
+    page = random.randint(1, 3)
+    while page != 4:
+        while p_hit_points != 0:
+            while page == 1:
+                b_hit_points_total = b_hit_points_1 + b_hit_points_2 + b_hit_points_3
+                print(f"{b_hit_points_total}")
+                while b_hit_points_1 > 0:
+                    print(f"It's your turn to attack {b_name_1}.")
+                    print(f"Please press '1' then <enter> to strike {b_name_1}.")
+                    response = input()
+                    try:
+                        if response == '1':
+                            p_attack = int(random.randrange(p_min_attack, p_max_attack))
+                            b_hit_points_1 = b_hit_points_1 - p_attack
+                            if b_hit_points_1 < 0:
+                                b_hit_points_1 = 0
+                            print(
+                                f"Nice hit, you attacked with a strength of {p_attack}. {b_name_1} now has {b_hit_points_1}hp.")
+                        else:
+                            print("Press '1' then <enter>.")
+                            continue
+                        break
+                    except ValueError:
+                        print("Please press '1' then <enter>.")
+                        continue
+                if b_hit_points_1 == 0:
+                    print("You won.")
+                    page = random.randint(2, 3)
+                    break
+
+
+                print(f"{b_name_2} is up next.")
+                while p_hit_points != 0:
+                    print(f"Please press '2' then <enter> to be attacked by {b_name_1}.")
+                    response = input()
+                    try:
+                        if response == '2':
+                            b_attack_1 = int(random.randrange(b_min_attack_1, b_max_attack_1))
+                            p_hit_points = p_hit_points - b_attack_1
+                            if p_hit_points < 0:
+                                p_hit_points = 0
+                            print(
+                                f"Ouch, the bear attacked with a strength of {b_attack_1}. {p_name} now has {p_hit_points}hp.")
+                        else:
+                            print("Press '2' then <enter>.")
+                            continue
+                        break
+                    except ValueError:
+                        print("Please press '2' then <enter> to be attacked.")
+                        continue
+                if p_hit_points == 0:
+                    print("That's gonna leave a mark.")
+                break
+
+            while page == 2:
+                b_hit_points_total = b_hit_points_1 + b_hit_points_2 + b_hit_points_3
+                print(f"{b_hit_points_total}")
+                while b_hit_points_2 > 0:
+                    print(f"It's your turn to attack {b_name_2}.")
+                    print(f"Please press '1' then <enter> to strike {b_name_2}.")
+                    response = input()
+                    try:
+                        if response == '1':
+                            p_attack = int(random.randrange(p_min_attack, p_max_attack))
+                            b_hit_points_2 = b_hit_points_2 - p_attack
+                            if b_hit_points_2 < 0:
+                                b_hit_points_2 = 0
+                            print(f"Nice hit, you attacked with a strength of {p_attack}. {b_name_2} now has {b_hit_points_2}hp.")
+                        else:
+                            print("Press '1' then <enter>.")
+                            continue
+                        break
+                    except ValueError:
+                        print("Please press '1' then <enter>.")
+                        continue
+                if b_hit_points_2 == 0:
+                    print("You won.")
+                    num = [1, 3]
+                    for n in num:
+                        page = n
+                    break
+
+                print(f"{b_name_2} is up next.")
+                while p_hit_points != 0:
+                    print(f"Please press '2' then <enter> to be attacked by {b_name_2}.")
+                    response = input()
+                    try:
+                        if response == '2':
+                            b_attack_2 = int(random.randrange(b_min_attack_2, b_max_attack_2))
+                            p_hit_points = p_hit_points - b_attack_2
+                            if p_hit_points < 0:
+                                p_hit_points = 0
+                            print(f"Ouch, the bear attacked with a strength of {b_attack_2}. {p_name} now has {p_hit_points}hp.")
+                        else:
+                            print("Press '2' then <enter>.")
+                            continue
+                        break
+                    except ValueError:
+                        print("Please press '2' then <enter> to be attacked.")
+                        continue
+                if p_hit_points == 0:
+                    print("That's gonna leave a mark.")
+                break
+
+            while page == 3:
+                b_hit_points_total = b_hit_points_1 + b_hit_points_2 + b_hit_points_3
+                print(f"{b_hit_points_total}")
+                while b_hit_points_3 > 0:
+                    print(f"It's your turn to attack {b_name_3}.")
+                    print(f"Please press '1' then <enter> to strike {b_name_3}.")
+                    response = input()
+                    try:
+                        if response == '1':
+                            p_attack = int(random.randrange(p_min_attack, p_max_attack))
+                            b_hit_points_3 = b_hit_points_3 - p_attack
+                            if b_hit_points_3 < 0:
+                                b_hit_points_3 = 0
+                            print(f"Nice hit, you attacked with a strength of {p_attack}. {b_name_3} now has {b_hit_points_3}hp.")
+                        else:
+                            print("Press '1' then <enter>.")
+                            continue
+                        break
+                    except ValueError:
+                        print("Please press '1' then <enter>.")
+                        continue
+                if b_hit_points_3 == 0:
+                    print("You won.")
+                    page = random.randint(1, 2)
+                    break
+                print(f"{b_name_3} is up next.")
+                while p_hit_points != 0:
+                    print(f"Please press '2' then <enter> to be attacked by {b_name_3}.")
+                    response = input()
+                    try:
+                        if response == '2':
+                            b_attack_3 = int(random.randrange(b_min_attack_3, b_max_attack_3))
+                            p_hit_points = p_hit_points - b_attack_3
+                            if p_hit_points < 0:
+                                p_hit_points = 0
+                            print(f"Ouch, the bear attacked with a strength of {b_attack_3}. {p_name} now has {p_hit_points}hp.")
+                        else:
+                            print("Press '2' then <enter>.")
+                            continue
+                        break
+                    except ValueError:
+                        print("Please press '2' then <enter> to be attacked.")
+                        continue
+                if p_hit_points == 0:
+                    print("That's gonna leave a mark.")
+                break
+
+            if b_hit_points_total == 0:
+                page = 4
+            break
+
+    if page == 4:
+        print("You Win!!!")
+    if p_hit_points == 0:
+        print("You Lose!!!")
+
+
+
+
+
+
+
+
+if __name__ == '__main__':
+    create_player()
+
+    create_bear_1()
+    create_bear_2()
+    create_bear_3()
+
+    create_encounter()

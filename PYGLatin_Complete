@@ -1,0 +1,27 @@
+import keyboard
+page1 = True
+page2 = False
+def pyglatin():
+    global page1
+    global page2
+    print("Would you like to translate a word? 'y' for yes 'n' for no.")
+    if keyboard.read_key() == 'y':
+        words = input("Please type word.").split()
+        for word in words:
+            if word[0] in ['a', 'e', 'i', 'o', 'u']:
+                print(word + 'way')
+            if word[:0] in ['b', 'c', 'd', 'f', 'g', 'j', 'k', 'l', 'm', 'n',
+                        'p', 'q', 's', 't', 'v', 'x', 'z', 'h', 'r', 'w', 'y']:
+                print(word[1:] + word[:1] + 'ay')
+            if word[0:1] in ['b', 'c', 'd', 'f', 'g', 'j', 'k', 'l', 'm', 'n',
+                         'p', 'q', 's', 't', 'v', 'x', 'z', 'h', 'r', 'w', 'y']:
+                print(word[2:] + word[0:2] + 'ay')
+    if keyboard.read_key() == 'n':
+        page2 = True
+        page1 = False
+    if page2 == True:
+        print("Have a nice day.")
+
+if __name__ == '__main__':
+    pyglatin()
+
